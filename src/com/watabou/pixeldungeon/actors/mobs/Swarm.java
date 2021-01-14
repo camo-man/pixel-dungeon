@@ -139,7 +139,7 @@ public class Swarm extends Mob {
 	@Override
 	public String description() {
 		return
-			"The deadly swarm of flies buzzes angrily. Every non-magical attack " +
-			"will split it into two smaller but equally dangerous swarms.";
+			"These are not normal flies, they look agressive and are larger " +
+			"and split up when attacked, trying to engulf you, death by a thousand cuts!";
 	}
 }

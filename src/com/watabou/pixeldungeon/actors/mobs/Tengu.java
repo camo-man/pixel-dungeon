@@ -102,7 +102,7 @@ public class Tengu extends Mob {
 		
 		Badges.validateBossSlain();
 		
-		yell( "Free at last..." );
+		yell( "GG" );
 	}
 	
 	@Override
@@ -170,14 +170,14 @@ public class Tengu extends Mob {
 	@Override
 	public void notice() {
 		super.notice();
-		yell( "Gotcha, " + Dungeon.hero.heroClass.title() + "!" );
+		yell( "Ha! You have awoken the unwilling guardian! Now you must fight me, " + Dungeon.hero.heroClass.title() + "! I was once like you, you know that?" );
 	}
 	
 	@Override
 	public String description() {
 		return
-			"Tengu are members of the ancient assassins clan, which is also called Tengu. " +
-			"These assassins are noted for extensive use of shuriken and traps.";
+			"This poor adventurure made it all the way to the bottom " +
+			"only to be captured and bound by what they found!";
 	}
 	
 	private static final HashSet<Class<?>> RESISTANCES = new HashSet<Class<?>>();

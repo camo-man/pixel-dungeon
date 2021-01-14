@@ -47,9 +47,6 @@ public class RatKing extends NPC {
 		return null;
 	}
 	
-	@Override
-	public void damage( int dmg, Object src ) {
-	}
 	
 	@Override
 	public void add( Buff buff ) {
@@ -75,7 +72,7 @@ public class RatKing extends NPC {
 	@Override
 	public String description() {
 		return 
-			"This rat is a little bigger than a regular marsupial rat " +
-			"and it's wearing a tiny crown on its head.";
+			"This rat could be an ally " +
+			"or is it the source of all these curses?";
 	}
 }

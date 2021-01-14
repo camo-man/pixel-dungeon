@@ -23,12 +23,12 @@ public enum HeroSubClass {
 
 	NONE( null, null ),
 	
-	GLADIATOR( "gladiator", 
-		"A successful attack with a melee weapon allows the _Gladiator_ to start a combo, " +
-		"in which every next successful hit inflicts more damage." ),
-	BERSERKER( "berserker", 
-		"When severely wounded, the _Berserker_ enters a state of wild fury " +
-		"significantly increasing his damage output." ),
+	GLADIATOR( "Stray", 
+		"Hardened by the dungeons the Stray hits harder and perrys more attacks " +
+		"and stops fleeing enemies." ),
+	BERSERKER( "Strategist", 
+		"Don't fight a battle you can't win! The Strategist knows this, and can assess enemies more accuratley " +
+		"giving him insight into their true power." ),
 	
 	WARLOCK( "warlock", 
 		"After killing an enemy the _Warlock_ consumes its soul. " +

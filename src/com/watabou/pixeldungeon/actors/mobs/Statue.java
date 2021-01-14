@@ -51,7 +51,7 @@ public class Statue extends Mob {
 		
 		do {
 			weapon = (Weapon)Generator.random( Generator.Category.WEAPON );
-		} while (!(weapon instanceof MeleeWeapon) || weapon.level() < 0);
+		} while (!(weapon instanceof MeleeWeapon) || weapon.level(4) < 0);
 		
 		weapon.identify();
 		weapon.enchant();
@@ -144,8 +144,8 @@ public class Statue extends Mob {
 	@Override
 	public String description() {
 		return
-			"You would think that it's just another ugly statue of this dungeon, but its red glowing eyes give itself away. " +
-			"While the statue itself is made of stone, the _" + weapon.name() + "_, it's wielding, looks real.";
+			"Between the glowing eyes and the strong stone, it might be better to leave this gargoyle in peace " +
+			"though he looks dangerous the weapon seems tempting!";
 	}
 	
 	private static final HashSet<Class<?>> RESISTANCES = new HashSet<Class<?>>();

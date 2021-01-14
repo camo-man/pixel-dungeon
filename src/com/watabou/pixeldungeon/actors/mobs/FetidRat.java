@@ -38,7 +38,7 @@ public class FetidRat extends Mob {
 		HP = HT = 15;
 		defenseSkill = 5;
 		
-		EXP = 3;
+		EXP = 5;
 		maxLvl = 5;	
 		
 		state = WANDERING;
@@ -82,7 +82,7 @@ public class FetidRat extends Mob {
 	@Override
 	public String description() {
 		return
-			"This marsupial rat is much larger than a regular one. It is surrounded by a foul cloud.";
+			"This stinky rat killed another adventurer, good luck!";
 	}
 	
 	private static final HashSet<Class<?>> IMMUNITIES = new HashSet<Class<?>>();

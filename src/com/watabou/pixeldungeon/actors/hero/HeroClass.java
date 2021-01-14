@@ -38,7 +38,7 @@ import com.watabou.utils.Bundle;
 
 public enum HeroClass {
 
-	WARRIOR( "warrior" ), MAGE( "mage" ), ROGUE( "rogue" ), HUNTRESS( "huntress" );
+	WARRIOR( "Soldier" ), MAGE( "Spelunker" ), ROGUE( "Thief" ), HUNTRESS( "Tracker" );
 	
 	private String title;
 	
@@ -48,35 +48,35 @@ public enum HeroClass {
 	
 	public static final String[] WAR_PERKS = {
 		"Воин начинает жизнь с 999999 силой.",
-		"Warriors start with a unique short sword. This sword can be later \"reforged\" to upgrade another melee weapon.",
-		"Warriors are less proficient with missile weapons.",
-		"Any piece of food restores some health when eaten.",
-		"Potions of Strength are identified from the beginning.",
+		"Soldiers start with basic standard issue equipment and are highly disciplined!",
+		"Soldiers are equipped with some potions and food.",
+		"Soldiers can kick down doors.",
+		"Soldiers come with extra strenght.",
 	};
 	
 	public static final String[] MAG_PERKS = {
-		"Mages start with a unique Wand of Magic Missile. This wand can be later \"disenchanted\" to upgrade another wand.",
-		"Mages recharge their wands faster.",
-		"When eaten, any piece of food restores 1 charge for all wands in the inventory.",
-		"Mages can use wands as a melee weapon.",
-		"Scrolls of Identify are identified from the beginning."
+		"Spelunkers can carry more.",
+		"Spelunkers have magical dew vials.",
+		"Even small food heals hunger to full.",
+		"Spelunkers come with a pickaxe and extra provisions.",
+		"Chance to loot food off of everything."
 	};
 	
 	public static final String[] ROG_PERKS = {
-		"Rogues start with a Ring of Shadows+1.",
-		"Rogues identify a type of a ring on equipping it.",
-		"Rogues are proficient with light armor, dodging better while wearing one.",
-		"Rogues are proficient in detecting hidden doors and traps.",
-		"Rogues can go without food longer.",
+		"Thieves start with a Ring of Shadows+1.",
+		"Theives identify a type of a ring on equipping it.",
+		"Theives are proficient with light armor, dodging better while wearing one.",
+		"Theives are proficient in detecting hidden doors and traps.",
+		"Theives find more gold.",
 		"Scrolls of Magic Mapping are identified from the beginning."
 	};
 	
 	public static final String[] HUN_PERKS = {
-		"Huntresses start with 15 points of Health.",
-		"Huntresses start with a unique upgradeable boomerang.",
-		"Huntresses are proficient with missile weapons and get a damage bonus for excessive strength when using them.",
-		"Huntresses gain more health from dewdrops.",
-		"Huntresses sense neighbouring monsters even if they are hidden behind obstacles."
+		"Trackers can sense nearby enemies.",
+		"Trackers always have enough arrows.",
+		"Trackers do bonus damage with pollarms.",
+		"Trackers find seeds more often.",
+		"Trackers search grass faster."
 	};
 	
 	public void initHero( Hero hero ) {

@@ -26,22 +26,22 @@ import com.watabou.utils.Random;
 public class Gnoll extends Mob {
 	
 	{
-		name = "gnoll scout";
+		name = "Wanderer";
 		spriteClass = GnollSprite.class;
 		
-		HP = HT = 12;
+		HP = HT = 15;
 		defenseSkill = 4;
 		
 		EXP = 2;
 		maxLvl = 8;
 		
 		loot = Gold.class;
-		lootChance = 0.5f;
+		lootChance = 0.7f;
 	}
 	
 	@Override
 	public int damageRoll() {
-		return Random.NormalIntRange( 2, 5 );
+		return Random.NormalIntRange( 2, 6 );
 	}
 	
 	@Override
@@ -63,7 +63,7 @@ public class Gnoll extends Mob {
 	@Override
 	public String description() {
 		return
-			"Gnolls are hyena-like humanoids. They dwell in sewers and dungeons, venturing up to raid the surface from time to time. " +
-			"Gnoll scouts are regular members of their pack, they are not as strong as brutes and not as intelligent as shamans.";
+			"Wanderers are adventurers that went insane when they couldn't get back out of here " +
+			"They come in several variants but this one is the most basic";
 	}
 }

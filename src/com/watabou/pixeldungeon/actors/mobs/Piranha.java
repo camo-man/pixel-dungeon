@@ -48,7 +48,7 @@ public class Piranha extends Mob {
 		super();
 		
 		HP = HT = 10 + Dungeon.depth * 5;
-		defenseSkill = 10 + Dungeon.depth * 2;
+		defenseSkill = 5 + Dungeon.depth * 2;
 	}
 	
 	@Override
@@ -124,17 +124,13 @@ public class Piranha extends Mob {
 	@Override
 	public String description() {
 		return
-			"These carnivorous fish are not natural inhabitants of underground pools. " +
-			"They were bred specifically to protect flooded treasure vaults.";
+			"These fish drop a strange meat that tastes amazing frozen " +
+			"but it's not clear how they got here!";
 	}
 	
 	private static final HashSet<Class<?>> IMMUNITIES = new HashSet<Class<?>>();
 	static {
 		IMMUNITIES.add( Burning.class );
-		IMMUNITIES.add( Paralysis.class );
-		IMMUNITIES.add( ToxicGas.class );
-		IMMUNITIES.add( Roots.class );
-		IMMUNITIES.add( Frost.class );
 	}
 	
 	@Override
